@@ -1,0 +1,40 @@
+#painel h1 {
+    font-family: Arial;
+    color: bl1ack;
+}
+
+#painel h5 {
+    font-family: arial;
+    text-align: center;
+    color: black;
+}
+
+#Botao {
+    width: 100px;
+    height: 100px;
+    font-size: 10px"
+
+}
+
+#Tinc {
+    width: 100px;
+    height: 20px;
+    font-size: 15px
+}
+
+#Tdec {
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+}
+
+#irrigar {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+#luz {
+    width: 100px;
+    height: 100px;
+}

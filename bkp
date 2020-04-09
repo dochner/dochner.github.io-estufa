@@ -1,0 +1,64 @@
+<?php
+$page =
+$_SERVER['PHP_SELF'];
+$sec = '3';
+$T=file_get_contents("controle_temperatura.txt");
+$I=file_get_contents("controle_iluminacao.txt");
+?>   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <?php
+        $str = file_get_contents("arquivo.txt");
+        list($temperatura, $umidade, $umidadeSolo, $nivelDaAgua) = explode("|", $str);
+        list($temp, $ntemp)=explode(":", $temperatura);
+        list($umid, $numid)=explode(":", $umidade);
+        list($umidS, $numidS)=explode(":", $umidadeSolo);
+        list($nivel, $nnivel)=explode(":", $nivelDaAgua);
+            if($I == 0){
+                $nilum="OFF";
+            }else{
+                $nilum="ON";
+                $ilum="LUZ";
+            }
+            /* if($nnivel<100){
+                $enivel="CRITICO";
+            }else{
+                $enivel="OK"
+            } */
+        echo '<tablewidth="30%" align="center" id="tabela" style="font-family:arial;color:black;font-size:x-large;">';
+        echo '<thead>>tr>';
+        echo '</tr></thead>';
+        echo '<tbody>';
+        echo '<tr>';
+        echo '<td><b>' . "TEMPERATURA" . '</b></td>';
+        echo '<td><b>' . $ntemp . " C" . '</b>/td>';
+        echo '</tr>';
+        echo '<tr>';
+        echo '<td><b>' . "UMIDADE" . '</b></td>';
+        echo '<td><b>' . $numid . " %" . '</b>/td>';
+        echo '</tr>';
+        echo '<tr>';
+        echo '<td><b>' . "ILUMINACAO" . '</b></td>';
+        echo '<td><b>' . $nilum  . '</b>/td>';
+        echo '</tr>';
+        echo '<tr>';
+        echo '<td><b>' . "NIVEL DA AGUA" . '</b></td>';
+        echo '<td><b>' . $nnivel . '</b>/td>';
+        echo '</tr>';
+
+        echo'</tbody></table>'
+        ?>

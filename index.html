@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta http equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
+    <style type="text/css">
+        @importurl("styles.css");
+        /* @importurl("onOff.css"); */
+    </style>
+
+</head>
+
+<body id="corpo">
+    <div align="center" id="bl">
+        <img src="banner1.jpg" align="middle"></img>
+    </div>
+    <h5></h5>
+
+
+    <div id=painel>
+        <h1>Painel de controle</h1>
+        <div class="caixa_painel"></div>
+        <div align="center" id="foto">
+            <img src="foto1.jpg" align="middle" width="300" height="200">
+        </div>
+        <form align="center" id="Botao" name="botao_foto" method="POST" action="index.php">
+            <input type="image" src="img_camera.jpg" name="botao_foto" id="botao_maquina" value="Tirar Foto!" />
+        </form>
+        <form align="center" id="Tinc" name="botao_temp_inc" method="POST" action="index.php">
+            <input type="image" src="img_tmp_inc.jpg" name="botao_temp_inc" id="Tinc" value="+" />
+        </form>
+
+        <div id="Techo">
+            <h2></h2>
+
+        </div>
+
+        <form align="center" id="Tdec" name="botao_temp_dec" method="POST" action="index.php">
+            <input type="image" src="img_temp_dec.png" name="botao_temp_dec" id="Tdec" value="-" />
+        </form>
+
+        <form align="center" id="irrigar" name="botao_irrigar" method="POST" action="index.php">
+            <input type="image" src="img_regador.jpg" name="botao_irrigar" id="irrigar" value="Irrigar" />
+        </form>
+
+        <form align="center" id="luz" name="botao_luz" method="POST" action="index.php">
+            <input type="image" src="img_luz.jpg" name="botao_luz" id="luz" value="Irrigar" />
+        </form>
+
+
+    </div>
+    <div align="center" id="b2">
+        <img src="img_banner2.jpg" align="middle" alt="">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+chown www
+data:www data controle_*.txt
+chmod 777 /dev/video0
+python comm.py
